@@ -10,4 +10,4 @@ where _username_ is your mysql username, and _database-name_ is the name of the 
 
 ### Updating
 
-To get data for newwer videos, keep an eye on the repository. I will upload the updated sql files here with the video-number in the commit message.
+To get data for newwer videos, keep an eye on the repository. I will upload the updated sql files here with the video-number in the commit message. In case you're following the entire series, don't forget to give the repository a star!
