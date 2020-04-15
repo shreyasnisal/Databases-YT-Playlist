@@ -34,7 +34,7 @@ CREATE TABLE `capitals` (
 
 LOCK TABLES `capitals` WRITE;
 /*!40000 ALTER TABLE `capitals` DISABLE KEYS */;
-INSERT INTO `capitals` VALUES ('IN','Delhi'),('PK','Islamabad'),('CN','Beijing'),('BT','Thimphu'),('US','Washington DC'),('CA','Ottawa'),('AU','Canberra'),('ES','Madrid'),('IT','Rome'),('DE','Berlin'),('BR','Brasilia'),('UY','Montevideo');
+INSERT INTO `capitals` VALUES ('BT','Thimphu'),('US','Washington DC'),('CA','Ottawa'),('AU','Canberra'),('ES','Madrid'),('IT','Rome'),('DE','Berlin'),('BR','Brasilia'),('UY','Montevideo'),('IN','Delhi'),('PK','Islamabad'),('CN','Beijing');
 /*!40000 ALTER TABLE `capitals` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -61,6 +61,30 @@ LOCK TABLES `countries` WRITE;
 /*!40000 ALTER TABLE `countries` DISABLE KEYS */;
 INSERT INTO `countries` VALUES ('AU','Australia',5),('BR','Brazil',4),('BT','Bhutan',1),('CA','Canada',3),('CN','China',1),('DE','Germany',2),('ES','Spain',2),('GB','Great Britain',2),('IN','India',1),('IT','Italy',2),('PK','Pakistan',1),('US','United States of America',3),('UY','Uruguay',4);
 /*!40000 ALTER TABLE `countries` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `currencies`
+--
+
+DROP TABLE IF EXISTS `currencies`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+ SET character_set_client = utf8mb4 ;
+CREATE TABLE `currencies` (
+  `country_code` varchar(2) DEFAULT NULL,
+  `currency_code` varchar(3) DEFAULT NULL,
+  `value_usd` decimal(5,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `currencies`
+--
+
+LOCK TABLES `currencies` WRITE;
+/*!40000 ALTER TABLE `currencies` DISABLE KEYS */;
+INSERT INTO `currencies` VALUES ('US','USD',1.00),('GB','GBP',0.81),('IN','INR',75.84),('PK','PKR',167.50),('US','USD',7.07);
+/*!40000 ALTER TABLE `currencies` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -141,4 +165,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-03-24  3:31:54
+-- Dump completed on 2020-04-16  4:07:26
