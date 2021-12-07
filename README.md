@@ -1,4 +1,8 @@
 # countries_database #
+
+[![Last Updated](https://img.shields.io/github/last-commit/shreyasnisal/DBMS_VideoSeries)](https://img.shields.io/github/last-commit/shreyasnisal/DBMS_VideoSeries)
+[![YouTube Channel Views](https://img.shields.io/youtube/channel/views/UCC6h00ZhODFCUQAT1BVEKHg?style=social)](https://img.shields.io/youtube/channel/views/UCC6h00ZhODFCUQAT1BVEKHg?style=social)
+
 This repository contains the sql file to populate your database with the data used in my video series.
 
 ### Creating the database from the file
